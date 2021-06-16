@@ -3,11 +3,17 @@ import { RouterModule, Routes } from '@angular/router';
 import { LoginComponent } from '../app/auth/login/login.component'
 import { SignupComponent } from '../app/auth/signup/signup.component'
 import { HomeComponent } from './pages/home/home.component';
+import { DiseasesComponent } from './pages/diseases/diseases.component';
+import { PestDetailComponent } from './pages/pest-detail/pest-detail.component';
+import { DiseaseDetailComponent } from './pages/disease-detail/disease-detail.component';
 
 const routes: Routes = [
   { path: 'login', component: LoginComponent },
   { path: 'signup', component: SignupComponent },
-  { path: 'home', component: HomeComponent },
+  { path: 'pests', component: HomeComponent },
+  { path: 'diseases', component: DiseasesComponent },
+  { path: 'pest-detail', component: PestDetailComponent },
+  { path: 'disease-detail', component: DiseaseDetailComponent },
   { path: '', redirectTo: '/login', pathMatch: 'full' }
 ];
 

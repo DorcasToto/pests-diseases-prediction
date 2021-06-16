@@ -10,6 +10,11 @@ import { HeaderComponent } from './pages/header/header.component';
 import { FooterComponent } from './pages/footer/footer.component';
 import { NavbarComponent } from './pages/navbar/navbar.component';
 import { NotfoundComponent } from './pages/notfound/notfound.component';
+import { DiseasesComponent } from './pages/diseases/diseases.component';
+import { PestDetailComponent } from './pages/pest-detail/pest-detail.component';
+import { DiseaseDetailComponent } from './pages/disease-detail/disease-detail.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -20,11 +25,18 @@ import { NotfoundComponent } from './pages/notfound/notfound.component';
     HeaderComponent,
     FooterComponent,
     NavbarComponent,
-    NotfoundComponent
+    NotfoundComponent,
+    DiseasesComponent,
+    PestDetailComponent,
+    DiseaseDetailComponent,
+    
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
+    HttpClientModule,
+    ReactiveFormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
