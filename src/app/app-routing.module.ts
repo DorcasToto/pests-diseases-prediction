@@ -12,7 +12,7 @@ const routes: Routes = [
   { path: 'signup', component: SignupComponent },
   { path: '', component: HomeComponent },
   { path: 'diseases', component: DiseasesComponent },
-  { path: 'pest-detail:pestId', component: PestDetailComponent },
+  { path: 'pest-detail/:id', component: PestDetailComponent },
   { path: 'disease-detail', component: DiseaseDetailComponent },
 
   { path: '', redirectTo: '/pests', pathMatch: 'full' }

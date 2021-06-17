@@ -17,7 +17,7 @@
                         <div class="col-md-6 text-lg-end">
                             <div class="d-flex align-items-center justify-content-center justify-content-md-end">
                           
-                             <input type="text" name="" id="" placeholder="Search pests by their names to see their prevention measures" class="form-control">
+                             <input type="text" name="" id="" placeholder="Search pests and diseases by their names to see their prevention measures" class="form-control">
                             </div>
                         </div>
                     </div>
@@ -25,7 +25,7 @@
 
                         <!-- Product-->
                         <div class="col-xl-3 col-lg-4 col-6 col-sm-12" *ngFor = 'let home of homes'>
-                            <div class="product mb-4"><a href="detail.html"><img class="img-fluid " src="assets/p1.jpg"
+                            <div class="product mb-4"><a routerLink ="/pest-detail/1"><img class="img-fluid " src="{{home.image}}"
                                         alt="Round grey hanging decor"></a>
                                 <div class="cta shadow d-inline-block"> </div>
                             </div>
@@ -33,6 +33,34 @@
 
                         </div>
                      
+                        <!-- Product-->
+                        <div class="col-xl-3 col-lg-4 col-6 col-sm-12" *ngFor = 'let home of homes'>
+                            <div class="product mb-4"><a routerLink ="/pest-detail/1"><img class="img-fluid " src="assets/p1.jpg"
+                                        alt="Round grey hanging decor"></a>
+                                <div class="cta shadow d-inline-block"> </div>
+                            </div>
+                            <h6 class="text-center"><a class="reset-anchor" href="detail.html">{{home.name}}</a></h6>
+
+                        </div>
+                    
+                        <!-- Product-->
+                        <div class="col-xl-3 col-lg-4 col-6 col-sm-12" >
+                            <div class="product mb-4"><a routerLink ="/pest-detail/1"><img class="img-fluid " src="assets/p1.jpg"
+                                        alt="Round grey hanging decor"></a>
+                                <div class="cta shadow d-inline-block"> </div>
+                            </div>
+                            <h6 class="text-center"><a class="reset-anchor" href="detail.html">Blight</a></h6>
+
+                        </div>
+                        <!-- Product-->
+                        <div class="col-xl-3 col-lg-4 col-6 col-sm-12">
+                            <div class="product mb-4"><a routerLink ="/pest-detail/1"><img class="img-fluid " src="assets/p1.jpg"
+                                        alt="Round grey hanging decor"></a>
+                                <div class="cta shadow d-inline-block"> </div>
+                            </div>
+                            <h6 class="text-center"><a class="reset-anchor" href="detail.html">Common rust</a></h6>
+
+                        </div>
 
                         <!-- Pagination-->
                         <nav class="pt-5" aria-label="Page navigation">
