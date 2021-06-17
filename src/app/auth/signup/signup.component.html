@@ -1,4 +1,13 @@
-<section class="py-5">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <section class="py-5">
     <h1 class="hero-heading text-center" style="color: #66BB6A;">Info Hub </h1>
       <div class="container py-5">
      
@@ -15,31 +24,34 @@
               <div class="row">
                 <div class="form-group col-lg-6 mb-3">
                   <label class="form-label">First name</label>
-                  <input class="form-control" type="text" placeholder="First name" formControlName="firstname">
+                  <input class="form-control" type="text" placeholder="First name" formControlName="firstName" required>
+               <!-- <span *ngIf="firstName.invalid ?">First name is required</span>  -->
                 </div>
                 <div class="form-group col-lg-6 mb-3">
                     <label class="form-label">Last name</label>
-                    <input class="form-control" type="text" placeholder="Last name" formControlName="lastname">
+                    <input class="form-control" type="text" placeholder="Last name" formControlName="lastName" required>
                   </div>
                   <div class="form-group col-lg-6 mb-3">
                     <label class="form-label">Phone number</label>
-                    <input class="form-control" type="number" placeholder="Phone Number"formControlName="phoneno">
+                    <input class="form-control" type="number" placeholder="Phone Number" formControlName="phoneNumber" required>
                   </div>
                   <div class="form-group col-lg-6 mb-3">
                     <label class="form-label">Username</label>
-                    <input class="form-control" type="text" placeholder="Phone Number"formControlName="username">
+                    <input class="form-control" type="text" placeholder="username" formControlName="username" required>
                   </div>
                   <div class="form-group col-lg-6 mb-3">
                     <label class="form-label">Location</label>
-                    <input class="form-control" type="text" placeholder="Phone Number"formControlName="location">
+                    <input class="form-control" type="text" placeholder="Location" formControlName="location" required>
                   </div>
                   <div class="form-group col-lg-6 mb-3">
                     <label class="form-label">Password</label>
-                    <input class="form-control" type="text" placeholder="Phone Number"formControlName="password">
+                    <input class="form-control" type="password" placeholder="password" formControlName="password">
                   </div>
              
                 <div class="form-group col-12">
-                  <button class="btn btn-primary" type="submit">Signup</button>
+                  <input type="submit" class="btn btn-primary" name="Signup" (click)="signup()">
+                 
+                  <!-- <button class="btn btn-primary" type="submit">Signup</button> -->
                 </div>
                 <a  routerLink="/login" >Already have an account?Login</a>
               </div>
@@ -49,3 +61,5 @@
         </div>
       </div>
     </section>
+</body>
+</html>
