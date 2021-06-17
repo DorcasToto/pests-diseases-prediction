@@ -14,7 +14,7 @@ const routes: Routes = [
   { path: 'diseases', component: DiseasesComponent },
   { path: 'pest-detail', component: PestDetailComponent },
   { path: 'disease-detail', component: DiseaseDetailComponent },
-  { path: '', redirectTo: '/login', pathMatch: 'full' }
+  { path: '', redirectTo: '/pests', pathMatch: 'full' }
 ];
 
 @NgModule({
