@@ -29,15 +29,18 @@ export class HomeService {
     let promise = new Promise<void>((resolve, reject) => {
       this.http.get<PestsResponse>(pest_disease_url).toPromise().then((response: { [x: string]: any }) => {
      
+        console.log(response['data']);
         
         for(let i = 0; i < response['data'].length;i++){
-          let name = response['data']['name']
-          let description = response['data']['description']
-          let image = response['data']['image']
-          let prevention = response['data']['prevention']
-          let signsSymptoms = response['data']['signsSymptoms']
-          let causes = response['data']['causes']
-          response['data']['name']
+          let name = response['data'][i]['name']
+          let description = response['data'][i]['description']
+          let image = response['data'][i]['image']
+          let prevention = response['data'][i]['prevention']
+          let signsSymptoms = response['data'][i]['signsSymptoms']
+          let causes = response['data'][i]['causes']
+          console.log(response['data'][i]['name']);
+          
+        
           
           let home = new Home(name,description,image,prevention,signsSymptoms,causes)
           this.homes.push(home)

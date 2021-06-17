@@ -10,10 +10,11 @@ import { DiseaseDetailComponent } from './pages/disease-detail/disease-detail.co
 const routes: Routes = [
   { path: 'login', component: LoginComponent },
   { path: 'signup', component: SignupComponent },
-  { path: 'pests', component: HomeComponent },
+  { path: '', component: HomeComponent },
   { path: 'diseases', component: DiseasesComponent },
-  { path: 'pest-detail', component: PestDetailComponent },
+  { path: 'pest-detail:pestId', component: PestDetailComponent },
   { path: 'disease-detail', component: DiseaseDetailComponent },
+
   { path: '', redirectTo: '/pests', pathMatch: 'full' }
 ];
 

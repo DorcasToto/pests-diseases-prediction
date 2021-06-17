@@ -16,6 +16,7 @@ export class HomeComponent implements OnInit {
     
     this.service.pestDiseaseRequest()
     this.service.home = this.home
+    this.homes = this.service.homes
     
   }
   
