@@ -28,21 +28,21 @@
             ],
             "styles": [
               "src/styles.css",
-              "src/vendor/swiper/swiper-bundle.min.css",
-              "src/vendor/glightbox/css/glightbox.css",
-              "src/vendor/choices.js/public/assets/styles/choices.css",
-              "src/vendor/nouislider/nouislider.min.css",
+              "src/plants/swiper/swiper-bundle.min.css",
+              "src/plants/glightbox/css/glightbox.css",
+              "src/plants/choices.js/public/assets/styles/choices.css",
+              "src/plants/nouislider/nouislider.min.css",
               "src/css/style.default.71609fc8.css",
               "src/css/custom.0a822280.css"
              
               
             ],
             "scripts": [
-              "src/vendor/bootstrap/js/bootstrap.bundle.min.js",
-              "src/vendor/swiper/swiper-bundle.min.js",
-              "src/vendor/glightbox/js/glightbox.js",
-              "src/vendor/choices.js/public/assets/scripts/choices.js",
-              "src/vendor/nouislider/nouislider.min.js",
+              "src/plants/bootstrap/js/bootstrap.bundle.min.js",
+              "src/plants/swiper/swiper-bundle.min.js",
+              "src/plants/glightbox/js/glightbox.js",
+              "src/plants/choices.js/public/assets/scripts/choices.js",
+              "src/plants/nouislider/nouislider.min.js",
               "src/js/theme.b8c44118.js",
               "src/js/js-cookie.55cdbe0d.js",
               "src/js/demo.7c677988.js"
